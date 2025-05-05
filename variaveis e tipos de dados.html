@@ -1,0 +1,41 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo JavaScript</title>
+</head>
+<body>
+    <h1>Olá, <span id="nome"></span></h1>
+
+
+    <script type="text/javascript">
+        var nome = "Rodrigo Costa";
+        var idade = 38;
+        var ativo = true;
+
+        console.log(nome);
+        console.log(typeof nome);
+
+        console.log(idade);
+        console.log(typeof idade);
+
+        console.log(ativo);
+        console.log(typeof ativo);
+
+
+        document.getElementById("nome").innerText = nome
+    </script>
+</body>
+</html>
+
+<!-- LINHA A LINHA:
+
+console.log(typeof nome); (typeof nome: o operador typeof é usado para descobrir o tipo de dado de uma variável. Ele retorna uma string indicando o tipo — como "string", "number", "boolean", "object", "undefined", etc.
+
+console.log(...): imprime no console do navegador (ou terminal) o que estiver entre parênteses.)
+
+Se a variável nome não tiver sido declarada, essa linha lançará um erro:
+
+ReferenceError: nome is not defined -->
+
+
