@@ -1,0 +1,82 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo JavaScript</title>
+</head>
+<body>
+    <!-- <h1>Olá, <span id="nome"></span></h1> -->
+
+        <h1>CNH</h1>
+
+        <input name="nome" placeholder="Seu primeiro nome" />
+        <input name="idade" placeholder="Sua idade" />
+        <button type="button"onclick="verificarIdade()">Verificar idade</button>
+
+    <script type="text/javascript">
+
+        function verificarIdade(){
+            
+            var nome = document.querySelector('input[name=nome]')
+            var idade = document.querySelector('input[name=idade]')
+            
+            console.log(nome.value)
+            console.log(idade.value)
+
+        }
+        // var nome = "Rodrigo Costa";
+        // var idade = 38;
+        // var ativo = true;
+
+        // console.log(nome);
+        // console.log(typeof nome);
+
+        // console.log(idade);
+        // console.log(typeof idade);
+
+        // console.log(ativo);
+        // console.log(typeof ativo);
+
+
+        // document.getElementById("nome").innerText = nome
+    </script>
+</body>
+</html>
+
+
+<!-- LINHA A LINHA:
+
+<input name="nome" placeholder="Seu primeiro nome" /> = Cria um campo de texto para o usuário digitar o nome.
+
+Atributo name="nome" permite que esse campo seja facilmente selecionado no JavaScript.
+
+placeholder="Seu primeiro nome" exibe um texto dentro do campo como sugestão.
+
+
+<button type="button" onclick="verificarIdade()">Verificar idade</button> = Cria um botão que, ao ser clicado, chama a função 
+verificarIdade() que está no script.
+
+
+function verificarIdade() {
+    Define uma função chamada verificarIdade, que será executada quando o botão for clicado.
+
+    
+    
+    var nome = document.querySelector('input[name=nome]') = Usa document.querySelector para selecionar o campo do nome com base no atributo name.
+
+    Armazena o elemento HTML (não o valor ainda!) na variável nome.
+
+
+    console.log(nome.value) = Mostra no console o valor digitado no campo nome (por exemplo, "João"). -->
+
+   
+
+
+
+
+
+
+
+
+
+
