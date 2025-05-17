@@ -1,0 +1,27 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo JavaScript</title>
+</head>
+<body>
+    <h1>Olá, <span id="nome"></span></h1>
+
+
+    <script type="text/javascript">
+        var nome = prompt("Qual o seu nome?");
+        var recebeIdade = prompt("Informe a sua idade.");
+
+        var idade = parseInt(recebeIdade);
+
+
+        console.log(nome);
+        console.log(typeof nome);
+
+        console.log(idade);
+        console.log(typeof idade)
+
+        document.getElementById("nome").innerText = nome
+    </script>
+</body>
+</html>
