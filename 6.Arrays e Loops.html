@@ -1,0 +1,73 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estudo JavaScript</title>
+</head>
+<body>
+    <!-- <h1>Olá, <span id="nome"></span></h1> -->
+
+        <h1>CNH</h1>
+
+        <input name="nome" placeholder="Seu primeiro nome" />
+        <input name="idade" placeholder="Sua idade" />
+        <button type="button"onclick="verificarIdade()">Verificar idade</button>
+
+        
+        <h1>Cybercops</h1>
+
+        <button type="button" onclick="listaCybercops()">Listar Cybercops</button>
+        
+        <ul id="cybercops">  
+        </ul>
+
+    <script type="text/javascript">
+
+        //API
+        var cybercops = ['Jupiter', 'Marte','Saturno','Mercurio', 'Lucifer']
+
+        function listaCybercops() {
+
+            var ul = document.getElementById('cybercops')
+            ul.innerHTML = ''
+            
+            cybercops.forEach(function(a){
+
+                var li = document.createElement('li')
+                var text = document.createTextNode(a)
+                li.appendChild(text)
+                ul.appendChild(li)
+            })
+        }
+
+        function verificarIdade(){
+            
+            var nome = document.querySelector('input[name=nome]')
+            var idade = document.querySelector('input[name=idade]')
+            
+            console.log(nome.value)
+            console.log(idade.value)
+
+        }
+        // var nome = "Rodrigo Costa";
+        // var idade = 38;
+        // var ativo = true;
+
+        // console.log(nome);
+        // console.log(typeof nome);
+
+        // console.log(idade);
+        // console.log(typeof idade);
+
+        // console.log(ativo);
+        // console.log(typeof ativo);
+
+
+        // document.getElementById("nome").innerText = nome
+    </script>
+</body>
+</html>
+
+
+// Este código ressalta criar arrays em JavaScript, criar listas e agrupadores em HTML e trabalhar com LOOPS (Percorrer pelo Array, pegando item por item,
+ e ir trabalhando com essa informação, que nesse caso foi adicionando os elementos filhos no agrupador ul )
